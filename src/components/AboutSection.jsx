@@ -12,22 +12,18 @@ const AboutSection = () => {
       <Description>
         <motion.div>
           <Hide>
-            <motion.h2 variants={titleAnim}>We work to make</motion.h2>
-          </Hide>
-          <Hide>
             <motion.h2 variants={titleAnim}>
-              your <span>dreams</span> come
+              Software <span>Engineer</span>{' '}
             </motion.h2>
-          </Hide>
-          <Hide>
-            <motion.h2 variants={titleAnim}>true.</motion.h2>
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
-          Contact us for any photography or videography ideas that you have. We
-          have professionals with amazing skills.
+          I appreciate you taking the time to check out my site. Below you'll
+          see the technologies I'm proficient in as well as information about my
+          experience and education. Also, you can head over to my projects page
+          to see examples of what I can do.
         </motion.p>
-        <motion.button variants={fade}>Contact Us</motion.button>
+        <motion.button variants={fade}>Contact Me</motion.button>
       </Description>
       <Image>
         <motion.img variants={photoAnim} src={home1} alt='guy with a camera' />
@@ -36,7 +32,5 @@ const AboutSection = () => {
     </About>
   );
 };
-
-//Styled Components
 
 export default AboutSection;

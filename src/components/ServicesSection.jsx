@@ -1,10 +1,15 @@
 import React from 'react';
 //Import Icons
 import clock from '../img/clock.svg';
-import diaphragm from '../img/diaphragm.svg';
-import money from '../img/money.svg';
-import teamwork from '../img/teamwork.svg';
-import home2 from '../img/home2.png';
+import typescript from '../img/typescript-seeklogo.com.svg';
+import python from '../img/python-5.svg';
+import css from '../img/css3.svg';
+import github from '../img/github-1.svg';
+import javascript from '../img/javascript-js-seeklogo.com.svg';
+
+import react from '../img/react.svg';
+
+import home2 from '../img/home2.jpg';
 //Styles
 import { About, Description, Image } from '../styles';
 import styled from 'styled-components';
@@ -22,36 +27,44 @@ const ServicesSection = () => {
     >
       <Description>
         <h2>
-          High <span>quality</span> services
+          <span>Proficient</span> Technologies
         </h2>
         <Cards>
           <Card>
             <div className='icon'>
-              <img alt='icon' src={clock} />
-              <h3>Efficient</h3>
+              <img alt='icon' src={react} />
+              <h3>React</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className='icon'>
-              <img alt='icon' src={teamwork} />
-              <h3>Teamwork</h3>
+              <img alt='icon' src={javascript} />
+              <h3>JavaScript</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className='icon'>
-              <img alt='icon' src={diaphragm} />
-              <h3>Diaphragm</h3>
+              <img alt='icon' src={typescript} />
+              <h3>Typescript</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
             <div className='icon'>
-              <img alt='icon' src={money} />
-              <h3>Affordable</h3>
+              <img alt='icon' src={python} />
+              <h3>Python</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+          </Card>
+          <Card>
+            <div className='icon'>
+              <img alt='icon' src={github} />
+              <h3>Git & GitHub</h3>
+            </div>
+          </Card>
+          <Card>
+            <div className='icon'>
+              <img alt='icon' src={css} />
+              <h3>CSS</h3>
+            </div>
           </Card>
         </Cards>
       </Description>
@@ -83,6 +96,7 @@ const Card = styled.div`
   .icon {
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
     h3 {
       margin-left: 1rem;
       background: white;
