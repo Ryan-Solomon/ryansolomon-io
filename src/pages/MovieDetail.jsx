@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 import { MovieState } from '../movieState';
+//Animations
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
@@ -11,6 +12,7 @@ const MovieDetail = () => {
   const [movies, setMovies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
 
+  //UseEffect
   useEffect(() => {
     const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
     setMovie(currentMovie[0]);
@@ -21,10 +23,10 @@ const MovieDetail = () => {
     <>
       {movie && (
         <Details
+          exit='exit'
           variants={pageAnimation}
           initial='hidden'
           animate='show'
-          exit='exit'
         >
           <HeadLine>
             <h2>{movie.title}</h2>
@@ -102,6 +104,7 @@ const ImageDisplay = styled.div`
   }
 `;
 
+//Award Component
 const Award = ({ title, description }) => {
   return (
     <AwardStyle>
