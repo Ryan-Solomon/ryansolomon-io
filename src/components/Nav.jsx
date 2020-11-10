@@ -19,7 +19,10 @@ const Nav = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/' ? '50%' : '0%' }}
+            animate={{
+              width: pathname === '/' ? '50%' : '0%',
+              opacity: pathname === '/' ? 1 : 0,
+            }}
           />
         </li>
         <li>
@@ -27,7 +30,10 @@ const Nav = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/work' ? '50%' : '0%' }}
+            animate={{
+              width: pathname === '/work' ? '50%' : '0%',
+              opacity: pathname === '/work' ? 1 : 0,
+            }}
           />
         </li>
         <li>
@@ -35,7 +41,10 @@ const Nav = () => {
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/contact' ? '50%' : '0%' }}
+            animate={{
+              width: pathname === '/contact' ? '50%' : '0%',
+              opacity: pathname === '/contact' ? 1 : 0,
+            }}
           />
         </li>
       </ul>
