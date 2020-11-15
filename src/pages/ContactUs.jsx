@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { pageAnimation, titleAnim } from '../animation';
 import styled from 'styled-components';
+import ContactForm from '../components/ContactForm';
 
 const ContactUs = () => {
   return (
@@ -11,30 +12,17 @@ const ContactUs = () => {
       variants={pageAnimation}
       initial='hidden'
       animate='show'
-      style={{ background: '#fff' }}
+      style={{ background: '#1b1b1b' }}
     >
       <Title>
         <Hide>
-          <motion.h2 variants={titleAnim}>Get in touch.</motion.h2>
+          <motion.h2 variants={titleAnim}>Get In Touch</motion.h2>
         </Hide>
       </Title>
       <div>
         <Hide>
           <Social variants={titleAnim}>
-            <Circle />
-            <h2>Send Us A Message</h2>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnim}>
-            <Circle />
-            <h2>Send an email.</h2>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnim}>
-            <Circle />
-            <h2>Social Media</h2>
+            <ContactForm />
           </Social>
         </Hide>
       </div>
@@ -44,8 +32,11 @@ const ContactUs = () => {
 
 const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
-  color: #353535;
+  color: #fff;
   min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media (max-width: 1500px) {
     padding: 2rem;
     font-size: 1rem;
@@ -53,7 +44,7 @@ const ContactStyle = styled(motion.div)`
 `;
 const Title = styled.div`
   margin-bottom: 4rem;
-  color: black;
+  color: #fff;
   @media (max-width: 1500px) {
     margin-top: 5rem;
   }
@@ -61,14 +52,9 @@ const Title = styled.div`
 const Hide = styled.div`
   overflow: hidden;
 `;
-const Circle = styled.div`
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: #353535;
-`;
 const Social = styled(motion.div)`
   display: flex;
+  flex-direction: column;
   align-items: center;
   h2 {
     margin: 2rem;
