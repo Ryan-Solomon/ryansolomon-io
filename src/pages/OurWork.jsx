@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 //Images
-import athlete from '../img/athlete-small.png';
 import theracer from '../img/theracer-small.png';
 import goodtimes from '../img/goodtimes-small.png';
 //Animations
@@ -12,12 +11,13 @@ import {
   slider,
   pageAnimation,
   fade,
-  photoAnim,
   lineAnim,
 } from '../animation';
 import { useScroll } from '../components/useScroll';
 import ScrollTop from '../components/ScrollTop';
 import './OurWork.styles.scss';
+import { projectData } from '../projectData';
+import ProjectCard from '../components/ProjectCard';
 
 const OurWork = () => {
   const [element, controls] = useScroll();
@@ -40,52 +40,14 @@ const OurWork = () => {
         <motion.h2 variants={fade}>Movie Buff</motion.h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
         <Hide variants={fade}>
-          <main className='page-content'>
-            <div className='card'>
-              <div className='content'>
-                <h2 className='title'>Description</h2>
-                <p className='copy'>
-                  This app allows users to search movies, play movie trivia,
-                  store movies to a watch list, and just for fun -- get some dad
-                  jokes.
-                </p>
-              </div>
-            </div>
-            <div className='card'>
-              <div className='content'>
-                <h2 className='title'>To The Beach</h2>
-                <p className='copy'>
-                  Plan your next beach trip with these fabulous destinations
-                </p>
-                <button className='btn'>View Trips</button>
-              </div>
-            </div>
-            <div className='card'>
-              <div className='content'>
-                <h2 className='title'>Desert Destinations</h2>
-                <p className='copy'>It's the desert you've always dreamed of</p>
-                <button className='btn'>Book Now</button>
-              </div>
-            </div>
-            <div className='card'>
-              <div className='content'>
-                <h2 className='title'>Explore The Galaxy</h2>
-                <p className='copy'>
-                  Seriously, straight up, just blast off into outer space today
-                </p>
-                <button className='btn'>Book Now</button>
-              </div>
-            </div>
-          </main>
+          <ProjectCard project={projectData[0]} />
         </Hide>
       </Movie>
 
       <Movie ref={element} variants={fade} animate={controls} initial='hidden'>
-        <h2>The Racer</h2>
+        <h2>Karen's Crafts</h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
-        <Link to='/work/the-racer'>
-          <img src={theracer} alt='theracer' />
-        </Link>
+        <ProjectCard project={projectData[1]} />
       </Movie>
 
       <Movie
@@ -94,11 +56,9 @@ const OurWork = () => {
         animate={controls2}
         initial='hidden'
       >
-        <h2>Good Times</h2>
+        <h2>This Website</h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
-        <Link to='/work/good-times'>
-          <img src={goodtimes} alt='goodtimes' />
-        </Link>
+        <ProjectCard project={projectData[2]} />
       </Movie>
       <ScrollTop />
     </Work>
