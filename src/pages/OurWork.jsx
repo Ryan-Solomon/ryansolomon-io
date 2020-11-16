@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-//Images
-import theracer from '../img/theracer-small.png';
-import goodtimes from '../img/goodtimes-small.png';
+
 //Animations
 import { motion } from 'framer-motion';
 import {
@@ -37,7 +34,7 @@ const OurWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
       <Movie variants={fade}>
-        <motion.h2 variants={fade}>Movie Buff</motion.h2>
+        <motion.h2 variants={fade}>Project 1. Movie Buff</motion.h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
         <Hide variants={fade}>
           <ProjectCard project={projectData[0]} />
@@ -45,7 +42,7 @@ const OurWork = () => {
       </Movie>
 
       <Movie ref={element} variants={fade} animate={controls} initial='hidden'>
-        <h2>Karen's Crafts</h2>
+        <h2>Project 2. Karen's Crafts</h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
         <ProjectCard project={projectData[1]} />
       </Movie>
@@ -56,7 +53,7 @@ const OurWork = () => {
         animate={controls2}
         initial='hidden'
       >
-        <h2>This Website</h2>
+        <h2>Project 3. This Website</h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
         <ProjectCard project={projectData[2]} />
       </Movie>

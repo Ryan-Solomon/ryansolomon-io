@@ -5,7 +5,7 @@ import styled from 'styled-components';
 function ContactForm() {
   const [state, handleSubmit] = useForm('contactForm');
   if (state.succeeded) {
-    return <p>I'll get back to you shortly!</p>;
+    return <p>Thanks for getting in touch. I'll get back to you shortly!</p>;
   }
   return (
     <Form onSubmit={handleSubmit}>

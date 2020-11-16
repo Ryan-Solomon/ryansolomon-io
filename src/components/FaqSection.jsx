@@ -18,7 +18,7 @@ const FaqSection = () => {
       <h2>Education & Experience</h2>
       <h3>Click the title for more information</h3>
       <AnimateSharedLayout>
-        <Toggle title='Masters Degree from the University of Northern Iowa in Exercise Science'>
+        <Toggle title="Master's Degree from the University of Northern Iowa in Exercise Science">
           <div className='answer'>
             <p>2015 - 2019</p>
             <p>GPA: 4.0</p>
@@ -26,8 +26,9 @@ const FaqSection = () => {
               While my education wasn't specifically in Computer Science, I did
               complete coursework in graduate-level statistics, human
               physiology, biomechanics, and other technical topics. This
-              demonstrates my ability to learn complex topics that is
-              transferable to software engineering.
+              demonstrates my ability to learn complex topics. I genuinely enjoy
+              learning new things and will show up each day doing just that to
+              become a better and better engineer.
             </p>
           </div>
         </Toggle>
@@ -37,14 +38,23 @@ const FaqSection = () => {
             <p>
               While earning my degree, I started my own online personal training
               business. By the time I completed my degree, I could support
-              myself fully through my business. When growing my business, I
-              learned how to develop my website using Wix, how to produce
-              content (articles, podcasts, videos, etc), how to run ads, email
+              myself fully with my business. When growing my business, I learned
+              how to develop my website using Wix, how to produce content
+              (articles, podcasts, videos, etc), how to run ads, email
               marketing, solving problems every day to help my clients get the
-              results they want, and a variety of other tasks when doing your
-              own thing. While growing my business, I also joined a team of
-              coaches and we all work collaboratively under the same brand,
-              Revive Stronger.
+              results they want, communicating complex topics to my clients in
+              simple terms, and a variety of other tasks that come with running
+              your own business.
+              <p>
+                While growing my business, I also joined a team of coaches and
+                we all work collaboratively under the same brand, Revive
+                Stronger. This was all done while also working as a full time
+                graduate assistant, maintaining a 4.0 GPA, and working as a
+                freelancer. I don't say this to imply I think it's really
+                anything special, but I do hope it's a signal that I'm willing
+                to do whatever it takes to provide far more value to the company
+                I'm working for than I'm taking in return.
+              </p>
             </p>
           </div>
         </Toggle>
@@ -53,11 +63,12 @@ const FaqSection = () => {
             <p>2018 - Present</p>
             <p>
               When growing my business, I also taught myself how to edit videos
-              and podcasts. I then used these skills work as a freelance video
-              editor. I've been editing anywhere from 2 to 10 videos per week
-              the last few years. While this isn't directly related to software
-              engineering, it does demonstrate my ability to learn on my own,
-              communicate with clients, and take initiative.
+              and podcasts. I then used these skills to work as a freelance
+              video editor (as well as a little bit of graphic design using
+              Photoshop). I've been editing anywhere from 2 to 10 videos per
+              week the last few years. While this isn't directly related to
+              software engineering, it does demonstrate my ability to learn on
+              my own, communicate with clients, and take initiative.
             </p>
           </div>
         </Toggle>
@@ -69,7 +80,7 @@ const FaqSection = () => {
               program development in Excel to analyze data, and organizing
               various academic events. This job, especially the programming in
               Excel part, made me realize the power of programming in general
-              and is what helped peak my interest in it.
+              and is what helped peak my interest in programming.
             </p>
           </div>
         </Toggle>
@@ -83,7 +94,7 @@ const FaqSection = () => {
               of my favorite work experiences while in school. I wish I would
               have had a kids strength and conditioning camp while growing up,
               so it was incredibly rewarding to be able to help some kids out
-              and provide some direction earlier on in life.
+              and provide some direction earlier on in their life.
             </p>
           </div>
         </Toggle>

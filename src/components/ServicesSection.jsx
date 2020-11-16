@@ -45,7 +45,7 @@ const ServicesSection = () => {
           <Card>
             <div className='icon'>
               <img alt='icon' src={typescript} />
-              <h3>Typescript</h3>
+              <h3>TypeScript</h3>
             </div>
           </Card>
           <Card>

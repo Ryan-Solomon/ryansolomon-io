@@ -26,7 +26,7 @@ const AboutSection = () => {
         <motion.button variants={fade}>Contact Me</motion.button>
       </Description>
       <Image>
-        <motion.img variants={photoAnim} src={home1} alt='guy with a camera' />
+        <motion.img variants={photoAnim} src={home1} alt='portfolio picture' />
       </Image>
       <Wave />
     </About>

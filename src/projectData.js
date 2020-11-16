@@ -5,7 +5,7 @@ export const projectData = [
     technologies:
       'I used React, TypeScript, CSS, and a variety of external APIs to create this app.',
     otherNotes:
-      "I created this app 100% on my own without the use of course and tutorials. I don't mean to imply I think this app is the best ever, but it is an accurate representation of my abilities.",
+      "I created this app 100% on my own without the use of courses and tutorials. I don't mean to imply I think this app is the best ever, but it is an accurate representation of my abilities.",
   },
   {
     description:
@@ -17,10 +17,10 @@ export const projectData = [
   },
   {
     description:
-      "Well, considering you're using this app now, I think you already get the gist of what it is",
+      "Well, considering you're using this app now, I think you already get the gist of what it is.",
     technologies:
       'I used React, JavaScript, Styled Components, SCSS, and an animation library called Framer Motion to build this site.',
     otherNotes:
-      "I used a variety of resouces to build this site (documentation, articles, etc.), so not all strictly from memory, but I'm comfortable with all of the functionality of this site.",
+      "I used a variety of resources to build this site (documentation, articles, etc.), so not all strictly from memory, but I'm comfortable with all of the functionality of this site.",
   },
 ];
