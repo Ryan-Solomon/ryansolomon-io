@@ -17,13 +17,14 @@ import {
 } from '../animation';
 import { useScroll } from '../components/useScroll';
 import ScrollTop from '../components/ScrollTop';
+import './OurWork.styles.scss';
 
 const OurWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   return (
     <Work
-      style={{ background: '#fff' }}
+      style={{ background: '#1b1b1b' }}
       exit='exit'
       variants={pageAnimation}
       initial='hidden'
@@ -35,14 +36,48 @@ const OurWork = () => {
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
-      <Movie>
-        <motion.h2 variants={fade}>The Athlete</motion.h2>
+      <Movie variants={fade}>
+        <motion.h2 variants={fade}>Movie Buff</motion.h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
-        <Link to='/work/the-athlete'>
-          <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt='athlete' />
-          </Hide>
-        </Link>
+        <Hide variants={fade}>
+          <main className='page-content'>
+            <div className='card'>
+              <div className='content'>
+                <h2 className='title'>Description</h2>
+                <p className='copy'>
+                  This app allows users to search movies, play movie trivia,
+                  store movies to a watch list, and just for fun -- get some dad
+                  jokes.
+                </p>
+              </div>
+            </div>
+            <div className='card'>
+              <div className='content'>
+                <h2 className='title'>To The Beach</h2>
+                <p className='copy'>
+                  Plan your next beach trip with these fabulous destinations
+                </p>
+                <button className='btn'>View Trips</button>
+              </div>
+            </div>
+            <div className='card'>
+              <div className='content'>
+                <h2 className='title'>Desert Destinations</h2>
+                <p className='copy'>It's the desert you've always dreamed of</p>
+                <button className='btn'>Book Now</button>
+              </div>
+            </div>
+            <div className='card'>
+              <div className='content'>
+                <h2 className='title'>Explore The Galaxy</h2>
+                <p className='copy'>
+                  Seriously, straight up, just blast off into outer space today
+                </p>
+                <button className='btn'>Book Now</button>
+              </div>
+            </div>
+          </main>
+        </Hide>
       </Movie>
 
       <Movie ref={element} variants={fade} animate={controls} initial='hidden'>
@@ -79,13 +114,14 @@ const Work = styled(motion.div)`
   }
   h2 {
     padding: 1rem 0rem;
+    color: #fff;
   }
 `;
 const Movie = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
-    background: #23d997;
+    background: #00b7c2;
     margin-bottom: 3rem;
   }
   img {
@@ -105,17 +141,17 @@ const Frame1 = styled(motion.div)`
   top: 10%;
   width: 100%;
   height: 100vh;
-  background: #fffebf;
+  background: #00b7c2;
   z-index: 2;
 `;
 const Frame2 = styled(Frame1)`
-  background: #ff8efb;
+  background: #6a6c6e;
 `;
 const Frame3 = styled(Frame1)`
-  background: #8ed2ff;
+  background: #00b7c2;
 `;
 const Frame4 = styled(Frame1)`
-  background: #8effa0;
+  background: #6a6c6e;
 `;
 
 export default OurWork;
