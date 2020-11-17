@@ -1,8 +1,8 @@
 $imageIds: '1517021897933-0e0319cfbc28', '1533903345306-15d1c30952de',
   '1545243424-0ce743321e11', '1531306728370-e2ebd9d7bb99';
 
-$bp-md: 600px;
-$bp-lg: 800px;
+$bp-md: 550px;
+$bp-lg: 900px;
 
 :root {
   --d: 700ms;
@@ -14,6 +14,7 @@ $bp-lg: 800px;
   grid-gap: 1rem;
   padding: 1rem;
   // max-width: 1024px;
+
   margin: 0 auto;
   font-family: var(--font-sans);
 
@@ -33,6 +34,7 @@ $bp-lg: 800px;
   overflow: hidden;
   padding: 1rem;
   width: 100%;
+  height: 100%;
   text-align: center;
   color: whitesmoke;
   background-color: whitesmoke;
