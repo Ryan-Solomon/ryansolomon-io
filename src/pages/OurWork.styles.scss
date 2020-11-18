@@ -139,7 +139,7 @@ $bp-lg: 900px;
   cursor: pointer;
   margin-top: 0.5rem;
   padding: 0.75rem 1.5rem;
-  font-size: 0.65rem;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
@@ -208,4 +208,10 @@ $bp-lg: 900px;
   100% {
     opacity: 1;
   }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7rem;
 }
