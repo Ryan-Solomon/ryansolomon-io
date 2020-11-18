@@ -5,8 +5,11 @@ import { About, Description, Image, Hide } from '../styles';
 import { motion } from 'framer-motion';
 import { titleAnim, fade, photoAnim } from '../animation';
 import Wave from './Wave';
+import { useHistory } from 'react-router-dom';
 
 const AboutSection = () => {
+  const history = useHistory();
+
   return (
     <About>
       <Description>
@@ -23,7 +26,9 @@ const AboutSection = () => {
           experience and education. Also, you can head over to my projects page
           to see examples of what I can do.
         </motion.p>
-        <motion.button variants={fade}>Contact Me</motion.button>
+        <motion.button onClick={() => history.push('/contact')} variants={fade}>
+          Contact Me
+        </motion.button>
       </Description>
       <Image>
         <motion.img variants={photoAnim} src={home1} alt='portfolio picture' />
