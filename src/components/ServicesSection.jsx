@@ -1,6 +1,5 @@
 import React from 'react';
 //Import Icons
-import clock from '../img/clock.svg';
 import typescript from '../img/typescript-seeklogo.com.svg';
 import python from '../img/python-5.svg';
 import css from '../img/css3.svg';

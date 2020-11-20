@@ -11,7 +11,7 @@ function ContactForm() {
     <Form onSubmit={handleSubmit}>
       <FormOption className='form-option'>
         <label htmlFor='email'>Email Address</label>
-        <input id='email' type='email' name='email' />
+        <input autoFocus id='email' type='email' name='email' />
         <ValidationError prefix='Email' field='email' errors={state.errors} />
       </FormOption>
       <FormOption className='form-option'>

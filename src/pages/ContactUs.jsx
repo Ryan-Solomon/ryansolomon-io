@@ -1,7 +1,7 @@
 import React from 'react';
 //Animations
 import { motion } from 'framer-motion';
-import { pageAnimation, titleAnim } from '../animation';
+import { titleAnim } from '../animation';
 import styled from 'styled-components';
 import ContactForm from '../components/ContactForm';
 
@@ -9,7 +9,7 @@ const ContactUs = () => {
   return (
     <ContactStyle
       exit='exit'
-      variants={pageAnimation}
+      // variants={pageAnimation}
       initial='hidden'
       animate='show'
       style={{ background: '#1b1b1b' }}
