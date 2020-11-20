@@ -38,7 +38,7 @@ const Form = styled.form`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 50vh;
+  height: 65vh;
 
   label {
     margin-bottom: 1rem;
