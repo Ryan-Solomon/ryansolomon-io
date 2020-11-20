@@ -17,8 +17,9 @@ import { projectData } from '../projectData';
 import ProjectCard from '../components/ProjectCard';
 
 const OurWork = () => {
-  const [element, controls] = useScroll();
+  const [element1, controls1] = useScroll();
   const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
   return (
     <Work
       style={{ background: '#1b1b1b' }}
@@ -41,21 +42,36 @@ const OurWork = () => {
         </Hide>
       </Movie>
 
-      <Movie ref={element} variants={fade} animate={controls} initial='hidden'>
+      <Movie
+        ref={element1}
+        variants={fade}
+        animate={controls1}
+        initial='hidden'
+      >
         <h2>Project 2. Karen's Crafts</h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
         <ProjectCard project={projectData[1]} />
       </Movie>
-
       <Movie
         ref={element2}
         variants={fade}
         animate={controls2}
         initial='hidden'
       >
-        <h2>Project 3. This Website</h2>
+        <h2>Project 3. Music Player</h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
         <ProjectCard project={projectData[2]} />
+      </Movie>
+
+      <Movie
+        ref={element3}
+        variants={fade}
+        animate={controls3}
+        initial='hidden'
+      >
+        <h2>Project 4. This Website</h2>
+        <motion.div variants={lineAnim} className='line'></motion.div>
+        <ProjectCard project={projectData[3]} />
       </Movie>
       <ScrollTop />
     </Work>

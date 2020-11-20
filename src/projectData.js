@@ -21,6 +21,15 @@ export const projectData = [
   },
   {
     description:
+      'This is a music player app. It performs simple functionality to play songs from a library, skip songs, etc.',
+    technologies: 'I used React, JavaScript, and SCSS to build this site.',
+    otherNotes:
+      'I built this application on my own and am comfortable with all of the functionality.',
+    websiteLink: 'https://wavesmusicplayer.netlify.app/',
+    githubLink: 'https://github.com/Ryan-Solomon/react-music-player',
+  },
+  {
+    description:
       "Well, considering you're using this app now, I think you already get the gist of what it is.",
     technologies:
       'I used React, JavaScript, Styled Components, SCSS, and an animation library called Framer Motion to build this site.',
