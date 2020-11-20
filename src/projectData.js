@@ -15,7 +15,7 @@ export const projectData = [
     technologies:
       'I used React, JavaScript, Redux, React Bootstrap, MongoDB, NodeJs, and Express to create this app.',
     otherNotes:
-      "I used an ecommerce tutorial to build this app. I'm a bit less comfortable with the backend in general, but I'm still comfortable with most of the functionality of this app and was able to customize it to make it my own.",
+      "I used an ecommerce tutorial to build this app, but I'm still comfortable with most of the functionality of this app and was able to customize it to make it my own.",
     websiteLink: 'https://karenscrafts.herokuapp.com/',
     githubLink: 'https://github.com/Ryan-Solomon/karens-crafts',
   },
