@@ -92,6 +92,7 @@ const Work = styled(motion.div)`
 `;
 const Movie = styled(motion.div)`
   padding-bottom: 10rem;
+
   .line {
     height: 0.5rem;
     background: #00b7c2;

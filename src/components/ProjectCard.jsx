@@ -22,12 +22,12 @@ const ProjectCard = ({ project }) => {
           <p className='copy'>{technologies}</p>
         </div>
       </div>
-      <div className='card'>
+      {/* <div className='card'>
         <div className='content'>
           <h2 className='title'>Other Notes</h2>
           <p className='copy'>{otherNotes}</p>
         </div>
-      </div>
+      </div> */}
       <div className='card'>
         <div className='content'>
           <h2 className='title'>View The App</h2>
