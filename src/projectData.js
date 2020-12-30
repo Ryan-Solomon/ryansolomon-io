@@ -11,11 +11,11 @@ export const projectData = [
   },
   {
     description:
-      "This is an Ecommerce app built up from scratch. Yes, my mom's name is Karen. She just retired, and I think she needs a hobby.",
+      "This is an Ecommerce app built up from scratch. Yes, my mom's name is Karen. She just retired, and I think she needs a hobby. Please note, the hosting provider I used will have a 'cold start' -- meaning it will take this app several seconds to initially load.",
     technologies:
       'I used React, JavaScript, Redux, React Bootstrap, MongoDB, NodeJs, and Express to create this app.',
     otherNotes:
-      "I used an ecommerce tutorial to build this app, but I'm still comfortable with most of the functionality of this app and was able to customize it to make it my own.",
+      "I used an ecommerce tutorial to build this app, but I'm comfortable with most of the functionality of this app and was able to customize it to make it my own.",
     websiteLink: 'https://karenscrafts.herokuapp.com/',
     githubLink: 'https://github.com/Ryan-Solomon/karens-crafts',
   },
