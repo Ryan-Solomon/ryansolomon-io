@@ -5,7 +5,7 @@ export const projectData = [
     technologies:
       'I used React, TypeScript, CSS, and a variety of external APIs to create this app.',
     otherNotes:
-      "I created this app 100% on my own without the use of courses and tutorials. I don't mean to imply I think this app is the best ever, but it is an accurate representation of my abilities.",
+      'I built this application on my own and am comfortable with all of the functionality.',
     websiteLink: 'https://movie-buff.vercel.app/',
     githubLink: 'https://github.com/Ryan-Solomon/movie-app',
   },
@@ -18,6 +18,16 @@ export const projectData = [
       "I used an ecommerce tutorial to build this app, but I'm comfortable with most of the functionality of this app and was able to customize it to make it my own.",
     websiteLink: 'https://karenscrafts.herokuapp.com/',
     githubLink: 'https://github.com/Ryan-Solomon/karens-crafts',
+  },
+  {
+    description:
+      'This app allows users to view vehicles, see specs about vehicle, and fill in details to order their vehicle.',
+    technologies:
+      'I used React, TypeScript, SCSS, and Framer Motion to create this app.',
+    otherNotes:
+      'I built this application on my own and am comfortable with all of the functionality.',
+    websiteLink: 'https://tesla-one.vercel.app/',
+    githubLink: 'https://github.com/Ryan-Solomon/tesla',
   },
   {
     description:
@@ -34,7 +44,7 @@ export const projectData = [
     technologies:
       'I used React, JavaScript, Styled Components, SCSS, and an animation library called Framer Motion to build this site.',
     otherNotes:
-      "I used a variety of resources to build this site (documentation, articles, etc.), so not all strictly from memory, but I'm comfortable with all of the functionality of this site.",
+      'I built this application on my own and am comfortable with all of the functionality.',
     websiteLink: '',
     githubLink: 'https://github.com/Ryan-Solomon/ryansolomon-io',
   },
