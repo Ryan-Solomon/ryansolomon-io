@@ -21,6 +21,7 @@ const OurWork = () => {
   const [element2, controls2] = useScroll();
   const [element3, controls3] = useScroll();
   const [element4, controls4] = useScroll();
+  const [element5, controls5] = useScroll();
   return (
     <Work
       style={{ background: '#1b1b1b' }}
@@ -49,17 +50,23 @@ const OurWork = () => {
         animate={controls1}
         initial='hidden'
       >
-        <h2>Project 2. Karen's Crafts</h2>
+        {/* <Movie variants={fade}> */}
+        <motion.h2 variants={fade}>
+          Project 2. Spotify-ish (React Native)
+        </motion.h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
-        <ProjectCard project={projectData[1]} />
+        <Hide variants={fade}>
+          <ProjectCard project={projectData[1]} />
+        </Hide>
       </Movie>
+
       <Movie
         ref={element2}
         variants={fade}
         animate={controls2}
         initial='hidden'
       >
-        <h2>Project 3. Tesla</h2>
+        <h2>Project 3. Karen's Crafts</h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
         <ProjectCard project={projectData[2]} />
       </Movie>
@@ -69,20 +76,30 @@ const OurWork = () => {
         animate={controls3}
         initial='hidden'
       >
-        <h2>Project 4. Music Player</h2>
+        <h2>Project 4. Tesla</h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
         <ProjectCard project={projectData[3]} />
       </Movie>
-
       <Movie
         ref={element4}
         variants={fade}
         animate={controls4}
         initial='hidden'
       >
-        <h2>Project 5. This Website</h2>
+        <h2>Project 5. Music Player</h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
         <ProjectCard project={projectData[4]} />
+      </Movie>
+
+      <Movie
+        ref={element5}
+        variants={fade}
+        animate={controls5}
+        initial='hidden'
+      >
+        <h2>Project 6. This Website</h2>
+        <motion.div variants={lineAnim} className='line'></motion.div>
+        <ProjectCard project={projectData[5]} />
       </Movie>
       <ScrollTop />
     </Work>
