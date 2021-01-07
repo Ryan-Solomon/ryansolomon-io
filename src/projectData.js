@@ -16,7 +16,7 @@ export const projectData = [
       'I used React Native, TypeScript, Styled Components, AWS, and GraphQL to build this app.',
     otherNotes:
       'I built this application on my own and am comfortable with all of the functionality.',
-    websiteLink: 'https://youtu.be/D5TcEanCuuM',
+    websiteLink: 'https://youtu.be/larjuiLvtsk',
     githubLink: 'https://github.com/Ryan-Solomon/movie-app',
   },
   {
