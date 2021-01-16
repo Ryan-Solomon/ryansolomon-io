@@ -66,7 +66,12 @@ const OurWork = () => {
         animate={controls2}
         initial='hidden'
       >
-        <h2>Project 3. Karen's Crafts</h2>
+        <h2>
+          Project 3. Karen's Crafts{' '}
+          <span style={{ fontSize: '16px' }}>
+            (Please allow several seconds to load because of a "cold start")
+          </span>
+        </h2>
         <motion.div variants={lineAnim} className='line'></motion.div>
         <ProjectCard project={projectData[2]} />
       </Movie>
