@@ -6,7 +6,7 @@ export const projectData = [
       'I used React, TypeScript, CSS, and a variety of external APIs to create this app.',
     otherNotes:
       'I built this application on my own and am comfortable with all of the functionality.',
-    websiteLink: 'https://movie-buff.vercel.app/',
+    websiteLink: 'https://movie-app-gamma.vercel.app/',
     githubLink: 'https://github.com/Ryan-Solomon/movie-app',
   },
   {
