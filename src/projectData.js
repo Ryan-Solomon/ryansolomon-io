@@ -8,6 +8,7 @@ export const projectData = [
       'I built this application on my own and am comfortable with all of the functionality.',
     websiteLink: 'https://movie-app-gamma.vercel.app/',
     githubLink: 'https://github.com/Ryan-Solomon/movie-app',
+    demo: 'https://youtu.be/Xvmp46JYyHA',
   },
   {
     description:

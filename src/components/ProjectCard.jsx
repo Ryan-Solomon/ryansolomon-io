@@ -7,6 +7,7 @@ const ProjectCard = ({ project }) => {
     otherNotes,
     githubLink,
     websiteLink,
+    demo,
   } = project;
   return (
     <main className='page-content'>
@@ -39,6 +40,14 @@ const ProjectCard = ({ project }) => {
               See The App
             </a>
           </button>
+          {demo && (
+            <button className='btn'>
+              <a href={demo} target='_blank'>
+                See Demo
+              </a>
+            </button>
+          )}
+
           <button className='btn'>
             <a href={githubLink} target='_blank'>
               GitHub Code
