@@ -22,6 +22,16 @@ export const projectData = [
   },
   {
     description:
+      'This app allows users to search listings, filter listings based on guests, view a map with listings, save listings, and sign in and out.',
+    technologies:
+      'I used React Native, TypeScript, Styled Components, AWS, and GraphQL to build this app.',
+    otherNotes:
+      'I built this application on my own and am comfortable with all of the functionality.',
+    websiteLink: 'https://youtu.be/d6kkpUnb17I',
+    githubLink: 'https://github.com/Ryan-Solomon/movie-app',
+  },
+  {
+    description:
       "This is an Ecommerce app built up from scratch. Yes, my mom's name is Karen. She just retired, and I think she needs a hobby. Please note, the hosting provider I used will have a 'cold start' -- meaning it will take this app several seconds to initially load.",
     technologies:
       'I used React, JavaScript, Redux, React Bootstrap, MongoDB, NodeJs, and Express to create this app.',
