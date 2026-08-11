@@ -6,7 +6,6 @@ export const profile = {
   remote: 'Open to Remote',
   email: 'ryan@ryansolomon.io',
   linkedin: 'https://www.linkedin.com/in/ryan-solomon-32b4121b3',
-  github: 'https://github.com/Ryan-Solomon',
   resumeHref: '/Ryan_Solomon_Resume.pdf',
   summary:
     "Software engineer with 5.5 years building and modernizing a production healthcare platform serving 1,000+ users. Primary contributor to the product frontend and shared component library, with progressively broader ownership across full-stack development, architecture, production AI, database performance, testing, security, and EHR integrations. Experienced leading large migrations on a live product, designing reusable platform capabilities, and diagnosing complex production failures.",
