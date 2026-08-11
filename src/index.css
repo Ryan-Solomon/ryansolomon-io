@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-ink-950 text-ink-50 antialiased;
+    font-feature-settings: 'ss01' on;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-white;
+  }
+}
+
+@layer utilities {
+  .section-heading {
+    @apply font-mono text-sm uppercase tracking-[0.2em] text-accent;
+  }
+}
